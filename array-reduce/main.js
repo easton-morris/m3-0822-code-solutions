@@ -33,9 +33,8 @@ const balance = account.reduce((prev, next) => {
 }, initial);
 console.log('balance:', balance);
 
-let mon = {};
 const composite = traits.reduce((prev, next) => {
-  mon = {...prev, ...next};
-  return mon;
-})
+  return {...prev, ...next}
+}
+, {});
 console.log('composite:', composite);
