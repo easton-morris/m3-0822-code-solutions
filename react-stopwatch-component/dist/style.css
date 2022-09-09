@@ -1,0 +1,21 @@
+.stopwatch-area {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.time {
+  position: relative;
+  left: 40px;
+  font-size: xx-large;
+}
+
+i {
+  cursor: pointer;
+  font-size: xx-large;
+  position: relative;
+  left: 40px;
+  top: 5px;
+}
