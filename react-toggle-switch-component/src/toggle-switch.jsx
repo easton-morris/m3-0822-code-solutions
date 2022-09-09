@@ -23,9 +23,10 @@ export default class ToggleSwitch extends React.Component {
     return (
       <>
         <div className="button-area">
-          <div className={(this.state.toggle === 'off') ? 'btn-slider-off' : 'btn-slider-on'}></div>
-          <div onClick={this.handleClick} className={(this.state.toggle === 'off') ? 'btn-off' : 'btn-on'}></div>
-          <span>{ (this.state.toggle === 'off') ? 'off' : 'on'}</span>
+          <div onClick={this.handleClick} className={(this.state.toggle === 'off') ? 'btn-off' : 'btn-on'}>
+            <p className={(this.state.toggle === 'off') ? 'text-off' : 'text-on'}>{ (this.state.toggle === 'off') ? 'off' : 'on'}</p>
+            <div className={(this.state.toggle === 'off') ? 'btn-slider-off' : 'btn-slider-on'}></div>
+          </div>
         </div>
       </>
     );
