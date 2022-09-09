@@ -1,3 +1,7 @@
+div {
+  cursor: pointer;
+}
+
 .text-on {
   position: absolute;
   left: 15px;
