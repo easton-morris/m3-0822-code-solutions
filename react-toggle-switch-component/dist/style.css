@@ -1,0 +1,61 @@
+div {
+  cursor: pointer;
+}
+
+.text-on {
+  position: absolute;
+  left: 15px;
+}
+
+.text-off {
+  position: absolute;
+  left: 80px;
+}
+
+.button-area {
+  height: 300px;
+}
+
+.btn-off {
+  border: 2px solid black;
+  border-radius: 25px;
+  max-width: 100px;
+  min-height: 50px;
+  background-color: whitesmoke;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.btn-on {
+  border: 2px solid black;
+  border-radius: 25px;
+  max-width: 100px;
+  min-height: 50px;
+  background-color: lightgreen;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.btn-slider-off {
+  position: relative;
+  left: 0;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: darkslategrey;
+  min-height: 50px;
+  max-width: 40px;
+  transition-property: left;
+  transition-duration: 0.5s;
+}
+
+.btn-slider-on {
+  position: relative;
+  left: 60px;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: darkslategray;
+  min-height: 50px;
+  max-width: 40px;
+  transition-property: left;
+  transition-duration: 0.5s;
+}
