@@ -1,0 +1,25 @@
+* {
+  margin: auto;
+}
+
+p {
+  border: 2px solid black;
+  width: 400px;
+}
+
+.closed {
+  display: none;
+}
+
+.item-header {
+  cursor: pointer;
+  background-color: grey;
+  border: 2px solid black;
+  width: 400px;
+  height: 50px;
+}
+
+.list-area {
+  margin: 4rem;
+  max-width: 30%;
+}
