@@ -1,0 +1,23 @@
+User Sign-Up:
+1. Auth Page loads AuthForm component with form Sign-In by default using the context provided by auth.jsx
+2. User clicks either Register anchor or Sign-Up button to adjust hash to 'sign-up' param
+3. Auth Form updates hash and displays conditional content for Sign Up and accepts user data
+4. User submits data with button and the post route creates new user data in the database
+and assigns that user data to the context
+5. user now exists on context, so when the app reloads, it redirects to the "" home page
+
+User Sign-in:
+1. Auth Page loads AuthForm component with form Sign-In by default using the context provided by auth.jsx
+2. User populates form fields and submits with button
+3. On submit, the data is supplied to the post route and confirms user data matches in database
+4. Context is then updated with user info and reloads to "" home page
+
+User can stay signed in:
+1. On app load, the app attempts to get jwt token from localstorage
+2. if successful, user data will be populated on app load and trigger the cascade to route to home
+
+User can sign out:
+1. From the AppContext.Provider, all the consumers are supplied the handleSignOut method
+2. When a user clicks an DOM object with this handler, the user's token is removed from localStorage
+3. After removal, on app reload, the lack of user data in the context causes the cascade to load conditionals
+as if there were no user
